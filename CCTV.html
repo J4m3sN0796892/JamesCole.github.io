@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Smart Home Security System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">CCTV</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Program</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Source Code</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Smart Home Security System</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Program</th>
+                                
+                                <tr>
+                                  <td><img src="images/CCTV.jpg" style="float:right" height="60%" width="40%" />This program was written in a team for a university assignment. I was the head of the development team and subsequently I had to make sure all the aspects of the program were functional before the submission date. It’s a shame about the ui of this program because to develop the program took quite a lot of effort which I feel is somewhat tarnished by the rather basic UI. However, this program took a few days to write and debug, and was actually quite fun to program, if I were to restart this program I would perhaps use java instead of python as I was learning java at the time and I felt more comfortable with the language, plus the way classes are programmed in python is a little bit janky and no where near as elegant as java. I also feel it might have been easier for the design team to create a nice-looking UI if I had used java because there are more drawing tools for creating a UI with java integration rather than using python.</td>
+                                  
+                                </tr>
+                            
+                                    <tr><a id ="How_Works"></a>
+                                      <th>How it Works</th>
+                                    </tr>
+                                    <tr>
+                                      <td>The Client</td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td><p> <img src="images/ServerPython.png" style="float:right"height="40%" width = "40%"/>The Client
+											This program is the main part of the system, the client logs into a secure server with an encrypted login, this login then dictates where the server looks for the security footage, this means that the videos are saved in the correct location using the client’s login as a filename. Once the user logs in they see a screen with a list of their footage, the user then selects which footage they wish to view and download it to their machine. The server sends the video in a h264 format to save some time. The client can then view the video from their machine, I am planning on expanding this concept for my final year project by adding video processing and checking if the detected movement is a person, animal, car, etc.
+											</p>
+										<p>The Camera</p>
+										<p>This is all being run on a raspberry pi and is using the raspberry pi camera module and a passive infrared sensor to check for movement. Once the motion is detected the camera begins recording and then stops when the movement is no longer detected. This is then saved locally and sent to the server which saved the incoming file to the specified user’s folder. The camera then goes back into the alert mode where it is waiting for movement to record, if the user selects the view live feed option, the camera starts another script which then broadcasts the camera feed to a webpage for the client to view, the original plan was to send the feed to the clients application but because of time constraints the easiest way to do it was to show on a webpage.</p></td>
+                                      </tr>
+                                      
+                                    <tr>
+                                        <th>Source Code Download</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="Pcap Analyser.zip" download>
+                                                <p>Server_for_ppm (includes Write up and demo video).zip
+                                                <img src="images/download.png" style="float:left" height="50"></p>
+                                              </a><a id ="DOWNLOAD_LINK"></a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
