@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Toy Town</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">Toy Town</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Project</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Pictures</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Toy Town</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Project</th>
+                                
+                                <tr>
+                                  <td>Toy town, much like many things this year, whether it be a bad haircut, a DIY mask or a questionable fashion choice to the morning meetings, was caused by the UK wide lockdown. Me and my older brother found ourselves at a loss as what to do with our time. So we decided to break out dads old model train set, while it perhaps isn’t a hobby of mine to watch little plastic trains go round a track it is my idea of fun seeing what I can add to it in terms of electronics and computerised functions. So, we set to work building a hill, painting everything and laying the track ready for toy towns big unveiling. All worked as planned. We were happy with the trains as they were but I decided that now my brother had had his fun it was my turn, I broke out my old Arduino and decided to make the points controlled by a little program I wrote, the switches used a pull up resistor to determine the position of the switch and moved a servo mounted under the table to the open or closed position. This meant we could control the whole layout from one central position and did not need to move to switch points over. After this success I did get a little carried away and decided to fit signals which changed colour when a train passed, noises when the train pulled into the station and a whistle noise when it entered the tunnel. I also decided to light the streets and pubs of toy town on a day night cycle. As I said this was not really a serious project more of an experiment to play with some toys and electronics while we could not leave the house.</td>
+                                  
+                                </tr>
+                            
+                                    <tr>
+                                      <th>How it Works</th>
+                                    </tr>
+                                   
+                                        <td><p> <img src="images/TT1.jpg" style="float:right"height="50%" width = "50%"/><a id ="How_Works"></a>
+											The whole layout is controlled by an Arduino uno. It uses pull up resistors on all the switches to determine the position of the switch which in turn controls the position of the points on the track. The Arduino also controls the lights on the layout and the sounds. The sounds under the tunnel are produced by a distance sensor triggering when a train passes close to it and sets the sound off, this is very similar to the distance sensor in the station which again makes a sound depending on if the train goes past or is it stop, it does this by timing how long it is in the station. Much like everything else, the LEDs are also controlled by the Arduino however these are just on a timer which turns them on and off every 5 minutes.
+											</p>
+										
+                                      </tr>
+                                      
+                                    <tr>
+                                        <th>Pictures<a id ="DOWNLOAD_LINK"></a></th>
+                                    </tr>
+                                    <tr>
+										
+                                        <td>
+											
+											<img src="images/tt8.jpg" height="30%" width = "50%"/>
+											<img src="images/TT2.jpg" height="30%" width = "50%"/>
+											<img src="images/TT3.jpg" height="30%" width = "50%"/>
+											
+											<img src="images/tt4.jpg" height="30%" width = "50%"/>
+											<img src="images/TT5.jpg" height="30%" width = "50%"/>
+											
+											<img src="images/TT6.jpg" height="30%" width = "50%"/>
+											<img src="images/TT7.jpg" height="30%" width = "50%"/>
+											
+											
+										
+                                              
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

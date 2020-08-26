@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Rail Fare Calculator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">Rail Fare Calculator</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Program</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Source Code</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Rail Fare Calculator</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Program</th>
+                                
+                                <tr>
+                                  <td><img src="images/DK.png" style="float:right" height="60%" width="40%" />This is a simple python script which was written to calculate the cheapest route between two points on a map. in this case it was a few train stations. I wanted to use dykstra's shortest path algorithm to calculate the shortest / cheapest path between two uk rail stations as i was doing a fair amount of travleing to and from placment interviews all over the country.</td>
+                                  
+                                </tr>
+                            
+                                    <tr><a id ="How_Works"></a>
+                                      <th>How it Works</th>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="images/DK2.png" style="float:right" height="60%" width="40%" />The Basic idea is that it uses dykstra's algorithm to find the shortest path between two points on a graph (map) and as i said its fairly basic but it uses python as the language as this was one of the only programing langugaes i knew at this time. Dykstra's algorithm starts by starting at the last point or the destination in this case, it sets the distance or the price to 0, then explores all connected nodes and marks the shortest distance, it repeats this until the start node is found and the shortest path between these two nodes is recorded. As you can see from the pictures, the cheapest path between Nottingham and London is via Grantham even though Nottingham has a direct link to London.</td>
+                                    </tr>
+                             
+                                    <tr>
+                                        <th>Source Code Download</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="Rail.zip" download>
+                                                <p>Rail Calculator (includes Write up).zip
+                                                <img src="images/download.png" style="float:left" height="50"></p>
+                                              </a><a id ="DOWNLOAD_LINK"></a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

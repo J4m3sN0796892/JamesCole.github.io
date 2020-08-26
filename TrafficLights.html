@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Smart Traffic Mangement</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">Smart Traffic Management</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Program</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Wiring Diagram</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Traffic Management System</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Program</th>
+                                
+                                <tr>
+                                  <td>
+									This program was written in C++. or more specifically the Arduino variant of the language, the Idea of this system was to create a completely embedded system which will run autonomously without any need for any input from outside users. Once the system has been installed it will operate completely by itself. I did this by adding sensors to the “traffic Light” which for a proof of concept was an Arduino breadboard with some LEDs. The sensors I added to the system were a distance sensor which would be used to detect if there was a car at the lights or if there was a pedestrian at the crossing depending on the day variable. This was controlled by the light dependant resistor which would tell the camera it if was day or night. This would then change the use of the distance sensor. If it were daytime and a pedestrian walked up to the crossing the lights would change from green to red. If it were in night mode the sensor would have the lights on red until a car approaching was detected, at which point it would change the lights from red to green to allow the car to pass.
+									</td>
+                                  
+                                </tr>
+                            
+                                    <tr><a id ="How_Works"></a>
+                                      <th>How it Works</th>
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                        <td><p> 
+											I kind of got carried away talking about this program in the above section because I vaguely described how it worked already. But briefly, there are some functions which change depending on sensor readings which change the light characteristics of the system. I.E. Day mode, Night Mode, Pedestrian centric mode, and car centric mode. This would allow the programmer to change the specific characteristics of the light changes depending on the esoteric application of one of the systems. If it were positioned in a more pedestrian area it would obviously be more biased towards the pedestrian mode and the lights would stay red for longer.
+											</p>
+										
+										
+									</td>
+
+                                      </tr>
+                                      
+                                    <tr>
+                                        <th>Wiring Diagram</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            
+                                                <p>
+                                                <img src="images/LIGHTS.png" style="float:left" height="500"></p>
+                                              </a><a id ="DOWNLOAD_LINK"></a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
