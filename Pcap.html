@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pcap File Analyser</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">Pcap File Analyser</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Program</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Source Code</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Pcap File Analyser</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Program</th>
+                                
+                                <tr>
+                                  <td>
+									This was also written as part of a team, we had to sift through a pcap file without using Wireshark to find information in the file, such as what the user was accessing, what was the dodgy search engine, what endian the header was etc, this was quite a repetitive project as it mostly involved reading bytes from the file and converting them into something legible and present the data in such a way that the user was able to see all the relevant information.
+									</td>
+                                  
+                                </tr>
+                            
+                                    <tr><a id ="How_Works"></a>
+                                      <th>How it Works</th>
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                        <td><p> <img src="images/PCAP.png" style="float:right"height="60%" width = "50%"/>
+											This was spilt into four tasks each with a different output required, so if the user only wanted to see the structure of a pcap file, they would only need to run the first part, and if they needed other information, they could run other parts of the program separately. All sections were written in python. 
+											</p>
+										<p>Section One (Global Header)</p>
+										<p>The Function of this section was to analyse the global packet header. The output for this section was therefore the length of the header, the magic number and the endianness of the pcap file ( this is important because it changed the order and how you read the file), the major and minor version numbers of the file format, the snap length and the data link type. This section was very important for the other sections because it determined how the rest of the file was going to be read and understood.</p>
+										<p>Section Two (DCHP Frame)</p>
+										<p>This section's function was the analyse the DHCP frame and provide the user with; the timestamp of when this packet was captured, the actual GMT time corresponding to the timestamp, the length of the DHCP frame, the source and destination MAC and IP addresses of the captured comunication, and finally the name of the host PC. </p>
+										<p>Section Three (Find The Dodgey Website)</p>
+										<p>Section three was failry easy to implement as all we had to do was find a domain name which has an abnormal ending, so for this we searched through the whole file looking for domain names, and saving them, if they had a .com etc they were saved to a "trusted" list and if the ended in anything not in the safe names we added them to a separate list, once the program had searched the whole file the abnormal list was displayed to the user.</p>
+										<p>Section Four (Search engine)</p>
+										<p>For this section, similar to the previous one, we used a list of known search engines and if the user accessed a popular search engine it was logged, this means we could see what site the user accessed and where they got the url from in the first place and what they searched for.</p>
+										
+										
+									</td>
+
+                                      </tr>
+                                      
+                                    <tr>
+                                        <th>Source Code Download</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="Server_for_ppm.zip" download>
+                                                <p>Pcap Analyser (includes Write up).zip
+                                                <img src="images/download.png" style="float:left" height="50"></p>
+                                              </a><a id ="DOWNLOAD_LINK"></a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

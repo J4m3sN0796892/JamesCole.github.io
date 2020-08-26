@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Load Balancer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/Profile.jpg" alt="" /></span>
+							<h1 id="title">Load Balancer</h1>
+							<p>Navigation Bar</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back</span></a></li>
+								<li><a href="#Load_Balancer"><span class="icon solid fa-th">About The Program</span></a></li>
+								<li><a href="#How_Works"><span class="icon solid fa-th">How it Works</span></a></li>
+								<li><a href="#DOWNLOAD_LINK"><span class="icon solid fa-th">Source Code</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/kings_cole" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/james.cole.kings" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/J4m3sN0796892" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				
+				<!-- Portfolio -->
+					<section id="#LoadBalancer" class="two">
+						<div class="container">
+
+							<header><a id ="Load_Balancer"></a>
+								<h2>Load Balancer</h2>
+							</header>
+							<table style="width:100%">
+                                <tr>
+                                  <th>About The Program</th>
+                                
+                                <tr>
+                                  <td>This system was written as part of my second year at Nottingham Trent University. It was written in Java and the aim of it was to distribute jobs between nodes on a network. The system is written in Java and took just shy of 2 weeks to write and debug. The system consists of 3 main programs, the Load balancer program, the node program, and the initiator program (acting as the client).  The system works by allowing nodes to connect then registering them to a list of nodes. This means the program supports a varying number of nodes and the system can scale depending on the planed deployment and network requirements.</td>
+                                  
+                                </tr>
+                            
+                                    <tr><a id ="How_Works"></a>
+                                      <th>How it Works</th>
+                                    </tr>
+                                    <tr>
+                                      <td>The Load Balancer Porgram</td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td><p> <img src="images/SERVERJAVA.png" style="float:right"height="40%" width = "40%"/>This Section of code works by firstly hosting a server on a given port and IP address, after the server is running, it listens for incoming connections. Once a new connection is received the program distinguishes between a node connection and a client connection. After the type of connection has been established the relevant part of the code runs. If the connection is a node, the server creates a new node object and starts a new thread with the newly created nodes information. Once all this is set up the server replies to the node with an acknowledgement of the connection. The Node is then placed in a ready state where it is prepared to receive any incoming jobs from the load balancer.</p>
+                                        <p>If the connection is a Client, the server acknowledges the connection much like the node but a new client object is created and the client’s information is stored in this object. This allows the replies from the system to go to the correct client connection. The server-side thread for the client then gets put into the same ready state as the node and is waiting for an incoming job request. Once received, the load balancer uses a round robin approach to determine which node should receive the incoming job. This is done by checking the registered node list and getting the index of the next node. Once the correct node has been selected the job is forwarded and executed on the specified node.</p></td>
+                                        
+                                      </tr>
+                                      <tr>
+                                          <td>The Client Side</td>
+                                      </tr>
+                                      <tr>
+                                          <td><p>This program is what generates the jobs for the system. When you start the program, it asks for some information regarding what server you wish to connect to. Once the correct information has been entered it asks whether you wish to send a job. If you enter Yes then it asks for the job duration. Once this is done the job request is sent to the server. The server then does its magic and sends a message saying job received and is currently being processed, after a short delay the job completion message is received from the server and the program repeats until the client no longer wishes to send a job.</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td>The Node Side</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="images/NODE.png" style="float:right" height="40%" width="40%" />Similar to the client application, the node first asks for the server information. However once this has been entered, the node becomes completely autonomous and requires no more user input. The nodes are set in a ready state and are purely asked to complete jobs, all the job distribution is handled in the load balancer program. I did it this way because I found it easier to program the server side to handle objects and instances of classes rather than doing it on the node side, the nodes all still use classes but in themselves don’t really need any objects. I was going to add threading to the nodes to allow them to process multiple jobs at the same time but as this was written for a university module, I ran into time constraints and couldn’t complete this function. If I were to revisit however, I would definitely do this because it wouldn’t be overly difficult because of the way I programmed it initially.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Source Code Download</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="Load Balancer.zip" download>
+                                                <p>Load Balancer.zip
+                                                <img src="images/download.png" style="float:left" height="50"></p>
+                                              </a><a id ="DOWNLOAD_LINK"></a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                
+                                   
+					
+					</div>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
